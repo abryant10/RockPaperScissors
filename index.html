@@ -5,10 +5,248 @@
 </head>
 
 <body>
+<h1>Rock Papper Scissors!
+    function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) ) + min;
+    }
     
+    console.log(getRndInteger(1, 3));
+    
+    var randomNumber = getRndInteger(1, 3);
+    
+    console.log(randomNumber);
+    
+    function computerPlay() {
+    if (randomNumber === 1) {
+       return "rock"
+    } else if (randomNumber === 2) {
+       return "paper"
+    } else {
+        return "scissors"
+    };
+    }
+    
+    console.log (computerPlay());
+    
+    //user input
+    
+    var playerSelection = prompt("Choose Rock, Paper, or Scissors!").toLowerCase();
+    
+    console.log(playerSelection);
+    
+    const computerSelection = computerPlay();
+    
+    function playRound(playerSelection, computerSelection) {
+        // if ps = rock  and CS = paper then lose
+        if (playerSelection === "rock" && computerSelection === "paper") {
+            return "Paper beats Rock, you lose!"
+        }
+    //if ps = rock and cs = scissors then win
+        else if (playerSelection === "rock" && computerSelection === "scissors") {
+            return "Rock beats Scissors, you win!"
+        }
+    // if ps = paper and cs = rock then win
+    else if (playerSelection === "paper" && computerSelection === "rock") {
+            return "Paper beats Rock, you win!"
+        }
+    // if ps = paper and cs = sicssors then lose
+    else if (playerSelection === "paper" && computerSelection === "scissors") {
+            return "Scissors beats Paper, you lose!"
+        }
+    //if ps = scissors and cs = rock then lose
+    else if (playerSelection === "scissors" && computerSelection === "rock") {
+            return "Rock beats Scissors, you lose!"
+        }
+    // if ps = scissors and cs = paper then win
+    else if (playerSelection === "scissors" && computerSelection === "paper") {
+            return "Scissors beats Paper, you win!"
+        }
+    //else tie
+    else if (playerSelection === computerSelection) {
+            return "Its a tie!"
+        }
+    };
+    
+    
+    console.log(playRound(playerSelection, computerSelection));
+    alert("computer chose " + computerSelection);
+    alert(playRound(playerSelection, computerSelection));
+</h1>
+
 <script>
 
-    
+function game()
+{
+//#1
+function computerPlay() {
+function getRndInteger(min, max) {
+return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+var randomNumber = getRndInteger(1, 3);
+if (randomNumber === 1) {
+return "rock"
+} else if (randomNumber === 2) {
+return "paper"
+} else {
+return "scissors"
+};
+}
+
+const computerSelection = computerPlay();
+
+var playerSelection = prompt("Choose Rock, Paper, or Scissors!").toLowerCase(); 
+
+function playRound(playerSelection, computerSelection) {
+    // if ps = rock  and CS = paper then lose
+    if (playerSelection === "rock" && computerSelection === "paper") {
+        return "Paper beats Rock, you lose!"
+    }
+//if ps = rock and cs = scissors then win
+    else if (playerSelection === "rock" && computerSelection === "scissors") {
+        return "Rock beats Scissors, you win!"
+    }
+// if ps = paper and cs = rock then win
+else if (playerSelection === "paper" && computerSelection === "rock") {
+        return "Paper beats Rock, you win!"
+    }
+// if ps = paper and cs = sicssors then lose
+else if (playerSelection === "paper" && computerSelection === "scissors") {
+        return "Scissors beats Paper, you lose!"
+    }
+//if ps = scissors and cs = rock then lose
+else if (playerSelection === "scissors" && computerSelection === "rock") {
+        return "Rock beats Scissors, you lose!"
+    }
+// if ps = scissors and cs = paper then win
+else if (playerSelection === "scissors" && computerSelection === "paper") {
+        return "Scissors beats Paper, you win!"
+    }
+//else tie
+else if (playerSelection === computerSelection) {
+        return "Its a tie!"
+    }
+};
+
+alert("computer chose " + computerSelection);
+alert(playRound(playerSelection, computerSelection));
+//#2
+function computerPlay() {
+function getRndInteger(min, max) {
+return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+var randomNumber = getRndInteger(1, 3);
+if (randomNumber === 1) {
+return "rock"
+} else if (randomNumber === 2) {
+return "paper"
+} else {
+return "scissors"
+};
+}
+
+var playerSelection = prompt("Choose Rock, Paper, or Scissors!").toLowerCase(); 
+
+function playRound(playerSelection, computerSelection) {
+    // if ps = rock  and CS = paper then lose
+    if (playerSelection === "rock" && computerSelection === "paper") {
+        return "Paper beats Rock, you lose!"
+    }
+//if ps = rock and cs = scissors then win
+    else if (playerSelection === "rock" && computerSelection === "scissors") {
+        return "Rock beats Scissors, you win!"
+    }
+// if ps = paper and cs = rock then win
+else if (playerSelection === "paper" && computerSelection === "rock") {
+        return "Paper beats Rock, you win!"
+    }
+// if ps = paper and cs = sicssors then lose
+else if (playerSelection === "paper" && computerSelection === "scissors") {
+        return "Scissors beats Paper, you lose!"
+    }
+//if ps = scissors and cs = rock then lose
+else if (playerSelection === "scissors" && computerSelection === "rock") {
+        return "Rock beats Scissors, you lose!"
+    }
+// if ps = scissors and cs = paper then win
+else if (playerSelection === "scissors" && computerSelection === "paper") {
+        return "Scissors beats Paper, you win!"
+    }
+//else tie
+else if (playerSelection === computerSelection) {
+        return "Its a tie!"
+    }
+};
+
+alert("computer chose " + computerSelection);
+alert(playRound(playerSelection, computerSelection));
+
+//#3
+
+function computerPlay() {
+function getRndInteger(min, max) {
+return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+var randomNumber = getRndInteger(1, 3);
+if (randomNumber === 1) {
+return "rock"
+} else if (randomNumber === 2) {
+return "paper"
+} else {
+return "scissors"
+};
+}
+
+var playerSelection = prompt("Choose Rock, Paper, or Scissors!").toLowerCase(); 
+
+function playRound(playerSelection, computerSelection) {
+    // if ps = rock  and CS = paper then lose
+    if (playerSelection === "rock" && computerSelection === "paper") {
+        return "Paper beats Rock, you lose!"
+    }
+//if ps = rock and cs = scissors then win
+    else if (playerSelection === "rock" && computerSelection === "scissors") {
+        return "Rock beats Scissors, you win!"
+    }
+// if ps = paper and cs = rock then win
+else if (playerSelection === "paper" && computerSelection === "rock") {
+        return "Paper beats Rock, you win!"
+    }
+// if ps = paper and cs = sicssors then lose
+else if (playerSelection === "paper" && computerSelection === "scissors") {
+        return "Scissors beats Paper, you lose!"
+    }
+//if ps = scissors and cs = rock then lose
+else if (playerSelection === "scissors" && computerSelection === "rock") {
+        return "Rock beats Scissors, you lose!"
+    }
+// if ps = scissors and cs = paper then win
+else if (playerSelection === "scissors" && computerSelection === "paper") {
+        return "Scissors beats Paper, you win!"
+    }
+//else tie
+else if (playerSelection === computerSelection) {
+        return "Its a tie!"
+    }
+};
+
+alert("computer chose " + computerSelection);
+alert(playRound(playerSelection, computerSelection));
+}
+
+game();
+
+//add loop
+//function game() {
+
+//}
+//add promt only takes good answeres
+
+
+
+
+
+
+
 </script>    
 
 
