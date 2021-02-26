@@ -40,6 +40,12 @@ color: white;
 
 .score {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     margin-top: 40px;
+}
+
+.compScore {
+    margin-left: 70px;
 }
