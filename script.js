@@ -5,6 +5,7 @@ var computerSelection;
 var playerSelection;
 var roundResultText;
 let itemButton = document.querySelectorAll('.button');
+const resetButt = document.getElementById('resetButton');
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min
@@ -69,8 +70,23 @@ function endGame (computerScore, playerScore) {
             document.getElementById("roundResult").innerHTML = "YOU LOSE";
         } else {
         document.getElementById("roundResult").innerHTML = "YOU WIN!";
-            }
+            };
+        resetButt.className = 'resetButtonVis';
     }
+    
+}
+
+function resetGame () {
+    playerScore = 0;
+    computerScore = 0;
+    itemButton.forEach((button) => {
+        button.removeAttribute('disabled', '');
+    });
+    document.getElementById("compPlayResult").innerHTML = "Choose Rock, Paper, or Scissors";
+    document.getElementById("roundResult").innerHTML = "First to 5 Wins!";
+    document.getElementById("yourScore").innerHTML = ("Your Score: " + playerScore);
+    document.getElementById("compScore").innerHTML = ("Computer Score: " + computerScore);
+    resetButt.className = 'resetButtonNotVis';
 }
 
 function fullRound() {
@@ -107,6 +123,8 @@ document.getElementById("buttonPaper").addEventListener("click", fullRound);
 document.getElementById("buttonScissors").addEventListener("click", setPlayerScissors);
 
 document.getElementById("buttonScissors").addEventListener("click", fullRound);
+
+document.getElementById("resetButton").addEventListener("click", resetGame);
 
 /* CHECKLIST
 add reset switch

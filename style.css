@@ -49,3 +49,31 @@ color: white;
 .compScore {
     margin-left: 70px;
 }
+
+.resetLand {
+display: flex;
+flex: 1;
+flex-direction: row;
+-ms-flex-align: center;
+justify-content: center;
+margin-top: 50px;
+}
+.resetButtonVis {
+    display: flex;
+    margin: 30px;
+    width: 280px;
+    height: 80px;
+    border: solid white;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.resetButtonNotVis {
+    position: absolute;
+    left: -999em;
+    height: 0px;
+    width: 0px;
+
+}
