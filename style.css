@@ -1,0 +1,45 @@
+html {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+.toplogo {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.roundResult {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+display: flex;
+flex: 1;
+flex-direction: row;
+-ms-flex-align: center;
+justify-content: center;
+margin-top: 50px;
+}
+
+.button {
+display: flex;
+margin: 30px;
+width: 80px;
+height: 80px;
+border: solid white;
+align-items: center;
+justify-content: center;
+background-color: black;
+color: white;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
